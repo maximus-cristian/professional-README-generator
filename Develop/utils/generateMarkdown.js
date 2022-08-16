@@ -16,5 +16,17 @@ function generateMarkdown(data) {
 
 `;
 }
-
+module.exports=generateReadme
 module.exports = generateMarkdown;
+
+const generateReadme = function(data)
+{
+
+return`# ${data.title}
+# Description
+${data.description}
+-Table of Contents
+- Installation
+- Usage
+- Contributions
+$`}
